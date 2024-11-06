@@ -1,0 +1,10 @@
+vim.o.number = true                -- Show line numbers
+vim.o.relativenumber = true        -- Relative line numbers
+vim.o.tabstop = 4                  -- Number of spaces tabs count for
+vim.o.shiftwidth = 4               -- Number of spaces to use for indentation
+vim.o.softtabstop = 4	 	       -- Number of spaces tabs count for while editing 
+vim.o.expandtab = true             -- Use spaces instead of tabs
+vim.o.smartindent = true           -- Auto-indent new lines
+vim.o.clipboard = "unnamedplus"    -- Use system clipboard
+vim.o.ignorecase = true            -- Ignore case when searching
+vim.o.smartcase = true             -- Case-sensitive if uppercase is use
