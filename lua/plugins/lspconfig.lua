@@ -30,7 +30,7 @@ return {
                 on_attach = on_attach,  -- Attach function
             }
             
-	    require('lspconfig').julials.setup{
+    	    require('lspconfig').julials.setup{
                 on_attach = on_attach,  -- Attach function
             }
 
