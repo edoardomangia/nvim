@@ -10,3 +10,4 @@ vim.o.ignorecase = true            -- Ignore case when searching
 vim.o.smartcase = true             -- Case-sensitive if uppercase is use
 vim.o.swapfile = false             -- Disable swapfiles creation 
 vim.o.autoread = true              -- Reads new updates for the current file
+vim.o.termguicolors = true 

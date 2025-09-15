@@ -26,10 +26,14 @@ return {
                 end
             end
 
-            require('lspconfig').pyright.setup{
-                on_attach = on_attach,  -- Attach function
-            }
-            
+            --require('lspconfig').pyright.setup{
+            --    on_attach = on_attach,  -- Attach function
+            --}
+
+            require('lspconfig').pylsp.setup{
+                on_attach = on_attach,
+            }  
+
     	    require('lspconfig').julials.setup{
                 on_attach = on_attach,  -- Attach function
             }
