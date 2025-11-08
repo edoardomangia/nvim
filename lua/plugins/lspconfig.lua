@@ -26,25 +26,28 @@ return {
                 end
             end
 
-            --require('lspconfig').pyright.setup{
-            --    on_attach = on_attach,  -- Attach function
-            --}
 
-            require('lspconfig').pylsp.setup{
+
+            vim.lsp.config("pylsp", {
                 on_attach = on_attach,
-            }  
+            })
+            vim.lsp.enable("pylsp")
 
-    	    require('lspconfig').julials.setup{
-                on_attach = on_attach,  -- Attach function
-            }
+            vim.lsp.config("julials", {
+                on_attach = on_attach,
+            })
+            vim.lsp.enable("julials")
 
-            require('lspconfig').clangd.setup{
-                on_attach = on_attach,  -- Attach function
-            }
+            vim.lsp.config("clangd", {
+                on_attach = on_attach,
+            })
+            vim.lsp.enable("clangd")
 
-            require('lspconfig').rust_analyzer.setup{
-                on_attach = on_attach,  -- Attach function
-            }            
+            vim.lsp.config("rust_analyzer", {
+                on_attach = on_attach,
+            })
+            vim.lsp.enable("rust_analyzer")
+
         end,
     },
 }
